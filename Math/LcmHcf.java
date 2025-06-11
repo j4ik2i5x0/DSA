@@ -10,6 +10,7 @@ public class LcmHcf {
         int lcm = a * b / Gcd(a,b);
         System.out.println("HCF: " + Gcd(a,b));
         System.out.println("LCM: " + lcm);
+        sc.close();
     }
 
 
