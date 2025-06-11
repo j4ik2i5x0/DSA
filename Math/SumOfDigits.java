@@ -15,6 +15,8 @@ public class SumOfDigits {
         }
 
         System.out.println("Sum of Digits: " + sum);
+        sc.close();
+
     }
 }
 

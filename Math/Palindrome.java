@@ -19,5 +19,7 @@ public class Palindrome {
         } else{
             System.out.println("Not a Palindrow");
         }
+        sc.close();
+
     }
 }

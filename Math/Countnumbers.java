@@ -13,5 +13,7 @@ public class Countnumbers {
             count++;
         }
         System.out.println("Number of digits: " + count);
+        sc.close();
+
     }
 }
