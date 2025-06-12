@@ -10,12 +10,9 @@ public class IsPrime {
         
         boolean isPrime = false;
         
-        if (n == 1) {
-            System.out.println("Neither Prime nor Composite");
-        }
-        else if(n%2==0 && n!=2){
-            System.out.println("Composite number");
-        }
+        if (n == 1) System.out.println("Neither Prime nor Composite");
+
+        else if(n%2==0 && n!=2) System.out.println("Composite number");
         else {
             for (int i = 2; i <= Math.sqrt(n); i++) {
                 if (n % i == 0) { 
