@@ -17,7 +17,7 @@ public class IsPrime {
             System.out.println("Composite number");
         }
         else {
-            for (int i = 2; i < n; i++) {
+            for (int i = 2; i <= Math.sqrt(n); i++) {
                 if (n % i == 0) { 
                     isPrime = true;
                     break; 
