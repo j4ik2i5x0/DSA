@@ -15,6 +15,7 @@ public class Average {
         double avg = (double)(a+b+c)/3;
         System.out.println(avg);
 
+        scanner.close();
 
     }
 }
