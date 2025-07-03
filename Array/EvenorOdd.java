@@ -9,7 +9,6 @@ public class EvenorOdd {
         int even = 0;
         int oddsum = 0;
         int evensum = 0;
-        int sub ;
         for(int i: arr){
             if(i%2==0){
                 evensum += i;
