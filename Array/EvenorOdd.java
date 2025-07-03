@@ -7,10 +7,23 @@ public class EvenorOdd {
 
         int odd = 0;
         int even = 0;
+        int oddsum = 0;
+        int evensum = 0;
+        int sub ;
         for(int i: arr){
-            if(i%2==0) even++;
-            else odd++;
+            if(i%2==0){
+                evensum += i;
+               
+                even++;
+            }
+            else{
+                oddsum += i;
+              
+                odd++;
+            }
         }
+        System.out.println(Math.abs(evensum-oddsum));
+        
 
         int[] oddarr = new int[odd];   
         int[] evenarr = new int[even];
@@ -23,10 +36,12 @@ public class EvenorOdd {
             else oddarr[oddindex++] = arr[a];
         }
 
-        for(int j: evenarr) System.out.print(j+" ");
+        for(int j: evenarr) 
+            System.out.print(j+" ");
         System.out.println();
-        for(int k: oddarr) System.out.print(k+" ");
-
+        for(int k: oddarr){  
+            System.out.print(k+" ");
+        }
 
     }
 }
