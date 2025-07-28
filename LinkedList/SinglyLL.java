@@ -65,8 +65,6 @@ class LL{
         System.out.println(temp.data);
     }
 
-
-
     public void deleteAtBeg(){
         Node temp = head;
         head = temp.next;
@@ -80,6 +78,13 @@ class LL{
         } temp.next = null;
     }
 
+    public void deleteAtSpec(int pos){
+        Node temp = head;
+        for(int i = 0; i < pos - 1; i++){
+            temp = temp.next;
+        }
+        temp.next = temp.next.next;
+    }
 }
 
 public class SinglyLL {
@@ -88,13 +93,14 @@ public class SinglyLL {
         list.insert(5);
         list.insert(10);
         list.insert(15);
+       
         list.insertAtBeg(2);
         list.insertAtBeg(1);
         list.insertAtPos(1,25);
+        
         list.deleteAtBeg();
         list.deleteAtEnd();
-
-
+        list.deleteAtSpec(2);
 
         list.display();
         
